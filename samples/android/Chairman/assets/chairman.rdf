@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY chairman "http://yarta.gforge.inria.fr/ontologies/chairman.rdf#">
+  <!ENTITY mse "http://yarta.gforge.inria.fr/ontologies/mse.rdf#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="&chairman;"
+         xmlns:mse="&mse;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+		 xmlns:chairman="&chairman;">
+		<!-- Classes -->
+		
+		<!-- Object Properties -->
+		<owl:ObjectProperty rdf:about="#likes">
+			<rdfs:domain rdf:resource="&mse;Person"/>
+			<rdfs:range rdf:resource="&mse;Content"/>
+		</owl:ObjectProperty>
+		
+		<owl:ObjectProperty rdf:about="#answered">
+			<rdfs:domain rdf:resource="&mse;Person"/>
+			<rdfs:range rdf:resource="&mse;Content"/>
+		</owl:ObjectProperty>
+</rdf:RDF>

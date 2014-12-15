@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chairman</string>
+    <string name="main_speaker">Speaker</string>
+    <string name="main_or">OR</string>
+    <string name="main_participant">Participant</string>
+    <string name="create_title">New presentation</string>
+    <string name="view_title">View presentation</string>
+    <string name="browse_title">Today\'s presentations</string>
+    <string name="browse_none">There are no presentations today.</string>
+    <string name="create_date">"Date: "</string>
+    <string name="create_start">Start:</string>
+    <string name="create_end">"End:  "</string>
+    <string name="create_title_hint">presentation title</string>
+    <string name="create_description_hint">description of the presentation</string>
+    <string name="create_description_format">Time: %1$s, between %2$s - %3$s\r\nDescription: %4$s</string>
+    <string name="create_save">Save</string>
+    <string name="create_empty_error">Empty fields are not allowed.</string>
+    <string name="view_ask">ask</string>
+    <string name="view_none">Use the form below to ask questions.</string>
+    <string name="view_author_fmt">%1$s (%2$d votes)</string>
+
+</resources>
