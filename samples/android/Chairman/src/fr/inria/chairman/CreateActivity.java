@@ -44,7 +44,7 @@ public class CreateActivity extends BaseActivity {
 		int hour = c.get(Calendar.HOUR_OF_DAY);
 
 		EditText date = (EditText) findViewById(R.id.date);
-		date.setText(String.format("%02d/%02d/%02d", day, month, year));
+		date.setText(String.format("%02d/%02d/%02d", day, month + 1, year));
 
 		date.setOnClickListener(new View.OnClickListener() {
 
@@ -78,7 +78,7 @@ public class CreateActivity extends BaseActivity {
 		Scanner scanner = new Scanner(getCtrlText(R.id.date));
 		scanner.useDelimiter("/");
 		int day = scanner.nextInt();
-		int month = scanner.nextInt();
+		int month = scanner.nextInt() - 1;
 		int year = scanner.nextInt();
 		scanner.close();
 
@@ -90,7 +90,7 @@ public class CreateActivity extends BaseActivity {
 					public void onDateSet(DatePicker view, int year,
 							int monthOfYear, int dayOfMonth) {
 						setCtrlText(R.id.date, String.format("%02d/%02d/%04d",
-								dayOfMonth, monthOfYear, year));
+								dayOfMonth, monthOfYear + 1, year));
 					}
 				}, year, month, day);
 		dialog.show();
@@ -150,14 +150,14 @@ public class CreateActivity extends BaseActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case MENU_ACCEPT:
-			onSave();
+			onClickSave(null);
 			break;
 		}
 
 		return super.onOptionsItemSelected(item);
 	}
 
-	private void onSave() {
+	public void onClickSave(View view) {
 		String title = getCtrlText(R.id.title);
 		String description = getCtrlText(R.id.description);
 		String date = getCtrlText(R.id.date);

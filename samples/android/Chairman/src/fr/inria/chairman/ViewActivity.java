@@ -157,6 +157,8 @@ public class ViewActivity extends BaseActivity {
 
 				hideSoftKeyboard(findViewById(R.id.questionText));
 
+				refreshCommentsList();
+
 				addedContent = true;
 			} catch (Exception ex) {
 				Toast.makeText(this, ex.toString(), Toast.LENGTH_SHORT).show();

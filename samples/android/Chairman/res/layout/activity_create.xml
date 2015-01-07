@@ -84,4 +84,14 @@
         android:singleLine="false"
         android:textColor="@color/AppTextColor" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/big_button"
+        android:onClick="onClickSave"
+        android:text="@string/create_save"
+        android:textColor="@android:color/white" />
+
 </LinearLayout>

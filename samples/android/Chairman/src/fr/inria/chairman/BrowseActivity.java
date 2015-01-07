@@ -42,7 +42,7 @@ public class BrowseActivity extends BaseActivity implements
 		int year = c.get(Calendar.YEAR);
 		int month = c.get(Calendar.MONTH);
 		int day = c.get(Calendar.DAY_OF_MONTH);
-		String today = String.format("%02d/%02d/%02d", day, month, year);
+		String today = String.format("%02d/%02d/%02d", day, month + 1, year);
 
 		Group group = (Group) getSAM().getResourceByURI(Constants.getGroupId());
 
